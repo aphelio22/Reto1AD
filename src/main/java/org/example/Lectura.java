@@ -50,9 +50,9 @@ public class Lectura {
         StringBuilder template = new StringBuilder();
 
         try (BufferedReader br = new BufferedReader(new FileReader(templateFile))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                template.append(line).append("\n");
+            String s;
+            while ((s = br.readLine()) != null) {
+                template.append(s).append("\n");
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
